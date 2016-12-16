@@ -27,14 +27,18 @@ npm install
 npm start
 bundle exec rails server
 ```
-"npm start" will launch webpack module bundler in "watch" mode.  Any changes to the static assets in frontend/src will cause webpack to re-bundle the assets.
+"npm start" will launch webpack module bundler in "watch" mode.  Any changes to the static assets in frontend/src will cause webpack to re-bundle the assets.  This process will lock the command-line waiting for changes, so you will either need to open a new terminal or run it in the background to execute the following command.
+
+"bundle exec rails server" starts the Rails server at port 3000.  To bind to an IP other than "localhost" use the "-b [host-IP]" opion.
 
 ## NG2-Rails-Seed
 
 The information below applies to the Angular2 project in frontend/src.  This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.22-1.
 
-### Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### NG Development server
+[deprecated] Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+[deprecated] - Use the Rails server w/webpack.  NG serve must be run from the /frontend folder for it to work.
 
 ### Code scaffolding
 
