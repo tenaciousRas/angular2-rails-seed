@@ -1,0 +1,5 @@
+sudo apt install libpq-dev
+gem install pg
+
+sudo chmod 777 -R /usr/local/src/nvm/versions/node/v5.12.0/
+npm install -g angular-cli

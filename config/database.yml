@@ -1,0 +1,33 @@
+development:
+  adapter: postgresql
+  encoding: UTF8
+  database: angular2-example_development
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: postgres
+  password: password
+  collation: en_US.UTF-8
+
+test:
+  adapter: postgresql
+  encoding: UTF8
+  database: angular2-example_test
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: postgres
+  password: password
+  collation: en_US.UTF-8
+
+production:
+  adapter: postgresql
+  encoding: UTF8
+  database: angular2-example
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: root
+  password:
+  collation: collate
+
